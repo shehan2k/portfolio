@@ -6,6 +6,7 @@
     <title>Shehan | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        
         html {
             scroll-behavior: smooth;
         }
@@ -74,8 +75,11 @@
 
         /* Content Section */
         .content {
-            display: block;
+            display: flexbox;
+            
+            
         }
+
 
         h4 {
             font-size: 20px;
@@ -176,11 +180,25 @@
             margin-left: 40px;
             margin-bottom: 20px;
             position: relative;
-            display: flex;
+            display: flexbox;
+            justify-content: center;
+            align-items: flex;
+            padding-top: 10px;
+        }
+        @media (max-width: 412px) {
+            .image-container {
+            float: right;
+            width: 40%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            position:relative;
+            display:flex;
             justify-content: center;
             align-items: flex-start;
             padding-top: 10px;
+            }
         }
+        
 
         .hexagon-shape {
             padding: 10px;
@@ -234,23 +252,7 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
-            .content { 
-                display: flex; 
-                flex-direction: column-reverse; 
-                text-align: center; 
-            }
-            .image-container {
-                float: none;
-                width: 100%;
-                margin-left: 0;
-            }
-            nav { flex-direction: column; gap: 20px; }
-            .nav-links a { margin: 0 10px; }
-            p { margin: 0 auto 30px auto; }
-            .portfolio-card { padding: 30px; }
-            .cert-item { flex: 0 0 100%; }
-        }
+
     </style>
 </head>
 <body>
@@ -275,7 +277,7 @@
                 </div>
             </div>
             <div class="text-side">
-                <h2>Hello, I'm</h2>
+                <h1 style="color: #ffffff;">Hello, I'm</h1>
                 <h1>Shehan Uyanwatte</h1>
                 <div class="role">BSc IT Undergraduate</div>
                 <div class="role">The Open University of Sri Lanka</div>
@@ -416,5 +418,4 @@
     </div>
 
 </body>
-
 </html>
